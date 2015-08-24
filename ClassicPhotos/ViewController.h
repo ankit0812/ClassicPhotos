@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreImage/CoreImage.h>
-#define kDatasourceURLString @"http://www.raywenderlich.com/downloads/ClassicPhotosDictionary.plist"            //our URL which will have the datasource
+#define kDatasourceURLString @"http://www.raywenderlich.com/downloads/ClassicPhotosDictionary.plist"       
+
+//our URL which will have the datasource
 
 @interface ViewController : UITableViewController
 

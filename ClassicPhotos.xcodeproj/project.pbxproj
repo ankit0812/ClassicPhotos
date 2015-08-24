@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936A75B31B8B1FD400D667D2 /* PhotoRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A75B21B8B1FD400D667D2 /* PhotoRecord.m */; };
+		936A75B61B8B21FB00D667D2 /* PendingOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A75B51B8B21FB00D667D2 /* PendingOperations.m */; };
+		936A75B91B8B27AE00D667D2 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A75B81B8B27AE00D667D2 /* ImageDownloader.m */; };
 		93AFBB811B86E3F20070857A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AFBB801B86E3F20070857A /* main.m */; };
 		93AFBB841B86E3F20070857A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AFBB831B86E3F20070857A /* AppDelegate.m */; };
 		93AFBB871B86E3F20070857A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AFBB861B86E3F20070857A /* ViewController.m */; };
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		936A75B11B8B1FD400D667D2 /* PhotoRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoRecord.h; sourceTree = "<group>"; };
+		936A75B21B8B1FD400D667D2 /* PhotoRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoRecord.m; sourceTree = "<group>"; };
+		936A75B41B8B21FB00D667D2 /* PendingOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingOperations.h; sourceTree = "<group>"; };
+		936A75B51B8B21FB00D667D2 /* PendingOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingOperations.m; sourceTree = "<group>"; };
+		936A75B71B8B27AE00D667D2 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		936A75B81B8B27AE00D667D2 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
 		93AFBB7B1B86E3F20070857A /* ClassicPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AFBB7F1B86E3F20070857A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93AFBB801B86E3F20070857A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +102,12 @@
 				93AFBB8B1B86E3F20070857A /* Images.xcassets */,
 				93AFBB8D1B86E3F20070857A /* LaunchScreen.xib */,
 				93AFBB7E1B86E3F20070857A /* Supporting Files */,
+				936A75B11B8B1FD400D667D2 /* PhotoRecord.h */,
+				936A75B21B8B1FD400D667D2 /* PhotoRecord.m */,
+				936A75B41B8B21FB00D667D2 /* PendingOperations.h */,
+				936A75B51B8B21FB00D667D2 /* PendingOperations.m */,
+				936A75B71B8B27AE00D667D2 /* ImageDownloader.h */,
+				936A75B81B8B27AE00D667D2 /* ImageDownloader.m */,
 			);
 			path = ClassicPhotos;
 			sourceTree = "<group>";
@@ -223,7 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936A75B91B8B27AE00D667D2 /* ImageDownloader.m in Sources */,
 				93AFBB871B86E3F20070857A /* ViewController.m in Sources */,
+				936A75B61B8B21FB00D667D2 /* PendingOperations.m in Sources */,
+				936A75B31B8B1FD400D667D2 /* PhotoRecord.m in Sources */,
 				93AFBB841B86E3F20070857A /* AppDelegate.m in Sources */,
 				93AFBB811B86E3F20070857A /* main.m in Sources */,
 			);
@@ -386,6 +404,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ClassicPhotosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassicPhotos.app/ClassicPhotos";
@@ -401,6 +420,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ClassicPhotosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassicPhotos.app/ClassicPhotos";
@@ -426,6 +446,7 @@
 				93AFBBA01B86E3F20070857A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93AFBBA11B86E3F20070857A /* Build configuration list for PBXNativeTarget "ClassicPhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +455,7 @@
 				93AFBBA31B86E3F20070857A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
